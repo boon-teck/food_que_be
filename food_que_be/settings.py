@@ -107,7 +107,7 @@ DATABASES = {
         # 'PORT': 5432
     }
 }
-DATABASES['default'] = dj_database_url.config(default='postgres://pnpbembsjwvqkx:4e11bb7d01c2f3edf51d099c4823405a82c82af3106d0aca1b7fecec0114d586@ec2-52-0-67-144.compute-1.amazonaws.com:5432/ds0k2r0hjbhh6')
+DATABASES['default'] = dj_database_url.config(default='postgres://fwkfoqaprjqodj:233c747223fb6f18321f6ebb07f93763b6e3f08ed11a39b7bc15cccad8cf924c@ec2-54-157-100-65.compute-1.amazonaws.com:5432/d75lf4n91r390d')
 
 
 AUTH_USER_MODEL = 'accounts.User'
@@ -157,7 +157,7 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=25),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
     'ROTATE_REFRESH_TOKENS': False,
     'BLACKLIST_AFTER_ROTATION': True,
